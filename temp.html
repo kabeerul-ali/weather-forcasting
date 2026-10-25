@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather api</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="showmsg">hi i am error so please v</div>
+    <div class="container">
+      <div class="top">
+        <img src="./image/0.png" alt="" class="bg-video" />
+        <div class="loc">
+          <div class="place">
+            <p id="location">--------</p>
+          </div>
+          <div class="border">
+            <button id="editloc">
+              <i class="fa-regular fa-pen-to-square">Change <br />Address</i>
+            </button>
+          </div>
+          <div class="selectaddress">
+            <input type="text" placeholder="pincode,placename" id="input" />
+            <div class="btn">
+              <button id="cancle">Cancle <span>+</span></button>
+              <button type="submit" id="confirm">
+                Confirm
+                <span> <i class="fa-solid fa-check"></i></span>
+              </button>
+            </div>
+            <div class="currentloc">
+              <button id="clbtn"><i class="fa-solid fa-plus"></i></button>
+              <h3>Use Current loc</h3>
+            </div>
+          </div>
+        </div>
+        <h1 id="wtype">----</h1>
+        <h1 id="showtemprature">------</h1>
+        <h2 id="windspeed">------</h2>
+      </div>
+      <div class="can"></div>
+      <div class="bottom">
+        <div class="pastdata">View past data</div>
+        <div class="futuredata">View future data</div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./temp.js"></script>
+  </body>
+</html>
