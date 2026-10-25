@@ -23,6 +23,10 @@ const height = canva.height;
 const gwidth = width - margin.left - margin.right;
 const gheight = height - margin.top - margin.bottom;
 
+
+function genrategraph(temprature, time, tempraturedegree) {
+    ctx.clearRect(0, 0, width, height);
+    
 ctx.moveTo(margin.left, margin.top);
 ctx.lineTo(margin.left, margin.top + gheight);
 ctx.moveTo(margin.left, margin.top + gheight);
@@ -30,8 +34,6 @@ ctx.lineTo(margin.left + gwidth, margin.top + gheight);
 ctx.lineWidth = 1;
 ctx.strokeStyle = "white";
 ctx.stroke();
-
-function genrategraph(temprature, time, tempraturedegree) {
   function addtext(t, x, y, f, r, c) {
     ctx.save(); // Current canvas state save karo
 
