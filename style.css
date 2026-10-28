@@ -10,7 +10,10 @@
     --radius: 22px;
     --shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
-
+html {
+  zoom: 1;
+  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
